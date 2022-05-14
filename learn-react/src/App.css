@@ -12,15 +12,86 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.container{
+  position: relative;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #21222A;
+  color: #DEEBF8;
+  padding: 15px 0px;
+}
+.logo-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  color: #61DAFB;
+}
+.logo h1{
+  margin: 0px;
+  position: absolute;
+  width: 158.32px;
+  height: 28.93px;
+  left: 26px;
+  top: 31px
 }
 .logo {
-  width: 60px;
+  width: 25px;
+  margin-right: .5rem;
+
 }
+.main {
+  position: relative;
+  color:white;
+  background-color: #282D35;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+}
+
+.main h1{
+  margin: 1rem;
+  font-size: 36px;font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39.06px;
+  line-height: 47px;
+  letter-spacing: -0.05em;
+}
+.main ul li {
+  list-style: none;
+  font-family: 'Inter';
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;  
+}
+.main ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #61DAFB; /* Change the color */
+  font-weight: bolder ; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -.1em; /* Also needed for space (tweak if needed) */
+  font-size: 23px;
+}
+
+.logo-bg {
+  
+  /* transform: translate(100px, 100px); */
+  color-interpolation-filters: sRGB;
+  width: 13em;
+  /* filter: grayscale(100%); */
+  filter: contrast(8%) opacity(20%);
+  position: absolute;
+  bottom: 31px;
+  right: -104px;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -29,6 +100,12 @@
 
 .nav-links > li {
   padding-right: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
 }
 
 .App-header {
