@@ -12,7 +12,7 @@ function App() {
     <section className='container'>
       <Header />
       <MainContent />
-      {/* <Footer /> */}
+       <Footer />
     </section>
   )
 }
