@@ -6,17 +6,21 @@ import Hero from './components/Hero'
 import Card from './components/Card'
 import Footer from './components/Footer'
 import MainContent from './components/MainContent'
+import FullName from './components/FullName'
+import ToD from './components/TimeOfDay'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <section className='container'>
-      <Header />
+      {/* <Header />
       <Hero />
       <MainContent />
       <Card />
-      <Footer />
+      <Footer /> */}
+      <FullName />
+      <ToD />
     </section>
   )
 }
