@@ -2,6 +2,8 @@ import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import Header from './components/Header'
+import Hero from './components/Hero'
+import Card from './components/Card'
 import Footer from './components/Footer'
 import MainContent from './components/MainContent'
 
@@ -11,8 +13,10 @@ function App() {
   return (
     <section className='container'>
       <Header />
+      <Hero />
       <MainContent />
-       <Footer />
+      <Card />
+      <Footer />
     </section>
   )
 }
