@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default function ToD() {
     const date = new Date()
     const hours = date.getHours()

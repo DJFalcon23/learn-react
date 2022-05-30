@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default function FullName() {
     const firstName = 'Joe';
     const lastName = 'Schmoe';
