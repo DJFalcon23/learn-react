@@ -122,6 +122,19 @@ width: 82.02px;
   color: #2B283A;
 }
 
+.container {
+  display: flex;
+  width: 662px;
+  justify-content: space-around;
+}
+
+.joke {
+  width: 178px;
+  border-radius: 9px;
+  background-color: darkcyan;
+  color: antiquewhite;
+}
+
 .main {
   margin-left: auto;
   margin-right: auto;

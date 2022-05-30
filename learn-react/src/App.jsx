@@ -9,42 +9,30 @@ import MainContent from './components/MainContent'
 import FullName from './components/FullName'
 import ToD from './components/TimeOfDay'
 import Contact from './components/Contact'
+import Joke from './components/Joke'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <section className='container'>
-      {/* <Header />
-      <Hero />
-      <MainContent />
-      <Card />
-      <Footer /> */}
-      {/* <FullName />
-      <ToD /> */}
-      <Contact 
-        img="https://placekitten.com/200/303"
-        name="Mr.Whateva"
-        tele="410555509"
-        email="whateve@gmail.com"
+      <Joke 
+        setup="I got my daughter a fridge for her birthday."
+        punchline="I can't wait to see her face light up when she opens it."
       />
-      <Contact 
-        img="https://placekitten.com/200/301"
-        name="Suppers"
-        tele="3305966644"
-        email="Sup@gamil.com"
+      <Joke 
+        setup="How did the hacker escape the police?"
+        punchline=" He just ransomware!"
       />
-      <Contact 
-        img="https://placekitten.com/200/304"
-        name="Rex"
-        tele="2403459118"
-        email='rex@gmail.com'
+      <Joke 
+        setup="Why don't pirates travel on mountain roads?"
+        punchline="Scurvy."
       />
-      <Contact 
-        img="https://placekitten.com/200/308"
-        name="Blip"
-        tele="5291190345"
-        email="blip@gmail.com"
+      <Joke 
+        setup="Why do bees stay in the hive in the winter?"
+        punchline="Swarm"
+      />
+      <Joke 
+        setup="What's the best thing about Switzerland?"
+        punchline="I don't know, but the flag is a big plus!"
       />
     </section>
   )
