@@ -12,25 +12,21 @@ import Contact from './components/Contact'
 import Joke from './components/Joke'
 import cardData from './data/cardData'
 import Panel from './components/Panel'
-
+import panelData from './data/travelPlanData'
 
 function App() {
-  const cardsArray = cardData.map((el) => {
-    return (<Card 
-     key={el.id}
-     img={el.coverImg}
-     rating={el.stats.rating}
-     reviewCount={el.stats.reviewCount}
-     location={el.location}
-     title={el.title}
-     price={el.price}
- />)
- })
+  const panelsArray = panelData.map((item) => {
+    return (
+      <Panel 
+        {...item}
+      />)
+  })
+//  console.log(panelsArray);
   return (
     <section className='container'>
       <Header />
       <section className='cards-list'>
-        {cardsArray}
+      {panelsArray}
       </section>
     </section>
   )
