@@ -3,6 +3,14 @@ import memesData from "../memesData";
 
 export default function MemeInputs() {
     let [memeImgSrc, setMemeUrl] = React.useState("memeUrl");
+    async function x() {
+        let getImg = new Request("http://localhost:3006/memes?name_like=nut")
+        const rex =  await fetch(getImg)
+        const [data] = await rex.json();
+        console.log(data);
+    }
+
+  x()
 
     function handleClick() {
         console.log("I ws clicked!");
@@ -10,9 +18,10 @@ export default function MemeInputs() {
     function handleMouseOver() {
         console.log("This the meme.")
     }
-    function getMeme() {
+    async function getMeme() {
         let memeIndex = Math.floor(Math.random() * 99);
         let resMeme = memesData.data.memes[memeIndex];
+        // let getImg = new Request("localhost:3004/memes/id/93895088")
         setMemeUrl((prevMemeImg) => {
             console.log(prevMemeImg.url,  memesData.data.memes.indexOf(prevMemeImg));
             return prevMemeImg = resMeme;

@@ -120,7 +120,8 @@ body {
   margin-top: 15px;
   grid-area: image;
   width: 478px;
-  object-fit: cover;
+  height: 768px;
+  object-fit:cover;
 }
 
 /*card*/
