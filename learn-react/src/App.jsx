@@ -13,21 +13,14 @@ import Joke from './components/Joke'
 import cardData from './data/cardData'
 import Panel from './components/Panel'
 import panelData from './data/travelPlanData'
+import MemeInputs from './components/MemeInputs'
 
 function App() {
-  const panelsArray = panelData.map((item) => {
-    return (
-      <Panel 
-        {...item}
-      />)
-  })
-//  console.log(panelsArray);
+
   return (
     <section className='container'>
       <Header />
-      <section className='cards-list'>
-      {panelsArray}
-      </section>
+      <MemeInputs />
     </section>
   )
 }
